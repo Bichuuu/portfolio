@@ -210,8 +210,8 @@ const Portfolio = () => {
     { name: "JavaScript", level: 60, icon: <Code className="w-8 h-8" />, color: "#F7DF1E" },
     { name: "React", level: 92, icon: <Code className="w-8 h-8" />, color: "#61DAFB" },
     { name: "Tailwind CSS", level: 73, icon: <Layout className="w-8 h-8" />, color: "#06B6D4" },
-    { name: "MongoDB", level: 53, icon: <Database className="w-8 h-8" />, color: "#47A248" },
-    { name: "Express", level: 43, icon: <Server className="w-8 h-8" />, color: "#000000" },
+    { name: "MongoDB", level: 63, icon: <Database className="w-8 h-8" />, color: "#47A248" },
+    { name: "Express", level: 73, icon: <Server className="w-8 h-8" />, color: "#000000" },
     { name: "Node.js", level: 63, icon: <Server className="w-8 h-8" />, color: "#339933" },
   ];
   const projects = [
@@ -221,16 +221,17 @@ const Portfolio = () => {
         "A full-stack e-commerce application with user authentication, product management.",
       technologies: ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS"],
       github: "https://github.com",
+      demo: "https://ecommerce-platform-react-eight.vercel.app",
       media: project1, // Image or video path
       type: "video", // or 'video'
     },
     {
-      title: "Task Management App",
+      title: "DevGallery",
       description:
-        "Real-time collaborative task management system with drag-and-drop functionality and team features.",
+        "Project Showcase Platform.",
       technologies: ["React", "Node.js", "Socket.io", "MongoDB"],
       github: "https://github.com",
-      demo: "https://demo.com",
+      demo: "https://dev-gallery-frontend.vercel.app",
       media: project2, // Image or video path
       type: "video", // or 'video'
     },
@@ -239,7 +240,7 @@ const Portfolio = () => {
       description: "Netflix-style MERN stack video streaming app",
       technologies: ["React", "Express", "MongoDB", "Firebase", "Node.js"],
       github: "https://github.com",
-      demo: "https://demo.com",
+      demo: "https://vercel.com/bichus-projects/streamberry-frontend",
       media: project3, // Image or video path
       type: "video", // or 'video'
     },
@@ -254,6 +255,7 @@ const Portfolio = () => {
         "React Hooks (useState, useEffect)",
       ],
       github: "https://github.com",
+      demo: "https://play-cast.vercel.app",
       media: project4, // Image or video path
       type: "video", // or 'video'
     },
