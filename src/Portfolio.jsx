@@ -240,7 +240,7 @@ const Portfolio = () => {
       description: "Netflix-style MERN stack video streaming app",
       technologies: ["React", "Express", "MongoDB", "Firebase", "Node.js"],
       github: "https://github.com",
-      demo: "https://vercel.com/bichus-projects/streamberry-frontend",
+      demo: "https://streamberry-frontend.vercel.app/",
       media: project3, // Image or video path
       type: "video", // or 'video'
     },
