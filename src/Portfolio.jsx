@@ -374,125 +374,6 @@ const Portfolio = () => {
         )}
       </nav>
 
-      {/* Hero Section */}
-      {/* <section
-        id="home"
-        className={`min-h-screen flex flex-col items-center justify-center px-4 pt-24 pb-20 transition-opacity duration-1000 relative overflow-hidden ${
-          visibleSections.has("home") ? "opacity-100" : "opacity-0"
-        }`}
-      >
-        
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <div className="w-[800px] h-[800px] bg-gradient-to-br from-purple-500/20 to-blue-500/20 rounded-full blur-3xl"></div>
-        </div>
-
-        <div className="relative flex-1 w-full max-w-7xl mx-auto flex items-center justify-center">
-          
-          <div className="absolute inset-0 flex items-center justify-center z-0">
-            <h1 className="leading-none select-none text-center">
-              <div
-                className={`text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[12rem] font-extrabold uppercase ${
-                  darkMode ? "text-white" : "text-black"
-                } tracking-tighter opacity-90`}
-              >
-                MUHAMMED
-              </div>
-            </h1>
-          </div>
-
-          
-          <div className="relative z-10 flex items-end justify-center w-full h-full">
-            <div className="relative">
-              <img
-                src={hero}
-                alt="Muhammed Bisharath"
-                className="w-[350px] sm:w-[450px] md:w-[550px] lg:w-[650px] xl:w-[750px] h-auto object-contain relative z-10"
-                style={{
-                  filter: "drop-shadow(0 25px 50px rgba(0, 0, 0, 0.5))",
-                  maxHeight: "70vh",
-                }}
-              />
-
-              
-              <div className="absolute -bottom-22 left-1/2 transform -translate-x-1/2 w-[110%] z-20">
-                <svg
-                  viewBox="0 0 300 60"
-                  className="w-full h-auto"
-                  preserveAspectRatio="none"
-                  style={{
-                    filter: "drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3))",
-                  }}
-                >
-                  <path
-                    d="M -30 40 Q 150 10, 300 40"
-                    stroke={darkMode ? "#8b5cf6" : "#7c3aed"}
-                    strokeWidth="5"
-                    fill="none"
-                    strokeLinecap="round"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-
-          
-          <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 z-10 mb-6 sm:mb-8 md:mb-12 lg:mb-10">
-            <h1 className="leading-none select-none text-center flex items-center justify-center">
-              
-              <span
-                className={`text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[12rem] font-extrabold uppercase ${
-                  darkMode ? "text-white" : "text-black"
-                } tracking-tighter`}
-              >
-                BIS
-              </span>
-             
-              <span
-                className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[12rem] font-extrabold uppercase tracking-tighter"
-                style={{
-                  color: "transparent",
-                  WebkitTextStroke: darkMode ? "3px white" : "3px black",
-                  textStroke: darkMode ? "3px white" : "3px black",
-                }}
-              >
-                HAR
-              </span>
-              
-              <span
-                className={`text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[12rem] font-extrabold uppercase ${
-                  darkMode ? "text-white" : "text-black"
-                } tracking-tighter`}
-              >
-                ATH
-              </span>
-            </h1>
-          </div>
-        </div>
-
-        
-        <div className="relative z-20 flex flex-col items-center mt-8 space-y-6">
-          <div
-            className={`text-xl md:text-2xl lg:text-3xl font-semibold ${textSecondaryClass}`}
-          >
-            <RotatingText
-              texts={[
-                "MERN Stack Developer",
-                "Front-End Developer ",
-                "UI/UX Designer",
-              ]}
-              rotationInterval={2000}
-            />
-          </div>
-
-          <button
-            onClick={() => scrollToSection("projects")}
-            className="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-2xl hover:scale-105 transition-all duration-300"
-          >
-            View My Work
-          </button>
-        </div>
-      </section> */}
-
       <section
         id="home"
         className={`min-h-screen flex flex-col items-center justify-center px-4 pt-24 pb-20 transition-opacity duration-1000 relative overflow-hidden ${
@@ -579,6 +460,24 @@ const Portfolio = () => {
                   ATH
                 </span>
               </h1>
+            </div>
+          </div>
+        </div>
+
+        {/* Rotating Text - Desktop */}
+        <div className="hidden md:block relative z-30 mt-6">
+          <div className="text-center">
+            <div
+              className={`text-xl md:text-2xl lg:text-3xl font-semibold ${textSecondaryClass}`}
+            >
+              <RotatingText
+                texts={[
+                  "MERN Stack Developer",
+                  "Front-End Developer",
+                  "UI/UX Designer",
+                ]}
+                rotationInterval={2000}
+              />
             </div>
           </div>
         </div>
